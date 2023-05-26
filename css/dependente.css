@@ -1,0 +1,526 @@
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html{
+	font-size: 62.5%; 
+	/* 1 REM === 10PX (DEZ PX) */
+
+	scroll-behavior: smooth;
+
+}
+
+:root{
+    /* COLOCAR VARIÁVEIS DE COR */
+
+	--preto-01: #000000;
+	--cinza-01: #D9D9D9;
+	--cinza-02: #9D9D9D;
+	--cinza-03: #585858;
+	--cinza-04: #383838;
+
+	--ui-01: #FFFFFF;
+	--ui-02: #A3B7CC;
+	--ui-03: #5F7E9E;
+	--ui-04: #335880;
+	--ui-05: #18395C;
+
+	--azul-marca: #2E4F86;
+	--azul-claro: #DFE3EF;
+	--off-white: #F5E6D4;
+	--vermelho: #DD7878;
+	--amarelo: #EAAF3F;
+	--verde: #366A32;
+	--verde-claro: #C3D2C2;
+	--verde-claro-02: #688F65;
+
+
+	--cabecalho-01: 2.4rem;
+    --cabecalho-02: 2.4rem;
+    --cabecalho-03: 1.4rem;
+    --paragrafo-01: 1.4rem;
+    --formulario-01: 1.4rem;
+    --formulario-02: 1.2rem;
+    --check-01: 1.2rem;
+    --botao-01: 1.6rem;
+	
+    
+}
+
+body, *{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+	width: 100%;
+	padding: 0 2.4rem;
+}
+
+.border{
+    display: none;
+}
+
+/* HEADER */
+
+.header{
+	display: none;
+}
+
+/* LOGIN */
+
+.login__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__info h2{
+    font-size: var(--cabecalho-01);
+    font-weight: 600;
+    color: var(--ui-04);
+    margin-bottom: 3.6rem;
+}
+
+.login__info h3{
+    font-size: var(--cabecalho-02);
+    font-weight: 600;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.login__info h4{
+    font-size: var(--cabecalho-03);
+    font-weight: 700;
+    color: var(--ui-04);
+    margin-bottom: 3.4rem;
+    margin-top: 1rem;
+}
+
+.login__info img{
+    width: 10rem;
+    margin-bottom: 2.4rem;
+}
+
+.login__certificado{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-02);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+.login__certificado svg{
+    width: 1.6rem;
+    fill: var(--ui-03);
+    margin-right: 0.8rem;
+}
+
+.login__seta{
+    margin-top: 5.6rem;
+    margin-bottom: 2rem;
+}
+
+.login__seta a{
+    width: 4.2rem;
+}
+
+.login__seta-btn{
+    display: none;
+}
+
+.btn-primario{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: var(--botao-01);
+    font-weight: 600;
+    color: var(--ui-01);
+    background-color: var(--ui-04);
+    padding: 1.2rem 2.6rem;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    
+}
+
+.btn-primario:last-child{
+    background-color: var(--ui-04);
+    margin-top: 1.2rem;
+}
+
+/* FORMULÁRIOS */
+
+.login{
+    margin-bottom: 18rem;
+}
+
+.dados-form{
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+::placeholder{
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+}
+
+.dados-form-radio{
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+.dados-form-radio h4{
+    margin-bottom: 2rem;
+}
+
+.dados__radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.dados__esc:first-child{
+    margin-bottom: 1.2rem;
+}
+
+#frase-checkbox{
+    font-size: var(--check-01);
+    font-weight: 600;
+    color: var(--ui-04);
+}
+
+#frase-checkbox span{
+    color: var(--ui-05);
+}
+
+/* MENU */
+
+.menu{
+	background-color: var(--azul-claro);
+	padding: 2.6rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.menu__itens{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.menu__itens svg{
+	width: 2.4rem;
+	fill: var(--ui-04);
+}
+
+
+/* FOOTER */
+
+.footer{
+    display: none;
+}
+
+@media (min-width: 768px){
+
+    :root{
+        /* COLOCAR VARIÁVEIS DE COR */
+    
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+    
+    
+        --cabecalho-01: 3.6rem;
+        --cabecalho-02: 3.2rem;
+        --cabecalho-03: 1.4rem;
+        --paragrafo-01: 1.4rem;
+        --formulario-01: 1.8rem;
+        --formulario-02: 1.8rem;
+        --check-01: 1.2rem;
+        --botao-01: 1.6rem;
+        
+        
+    }
+
+    .container{
+		padding: 0 3rem;
+	}
+
+    /* SETA */
+
+    .login__seta{
+        margin-bottom: 6rem;
+    }
+
+    .login__seta img{
+        width: 5rem;
+    }
+
+    .login__info{
+        width: 52.6rem;
+        margin: 0 auto;
+    }
+
+    .login__info h2{
+        margin-bottom: 4rem;
+    }
+
+    .login__info img{
+        width: 14.8rem;
+    }
+
+    /* MENU */
+
+	.menu__itens svg{
+		width: 3.6rem;
+	}
+}
+
+@media (min-width: 1180px){
+
+    :root{
+        /* COLOCAR VARIÁVEIS DE COR */
+    
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+    
+    
+        --cabecalho-01: 3.6rem;
+        --cabecalho-02: 3.2rem;
+        --cabecalho-03: 2rem; 
+        --cabecalho-06: 2rem;
+        --cabecalho-07: 3.2rem;
+        --paragrafo-01: 1.4rem; 
+        --paragrafo-03: 1.6rem;       
+        --formulario-01: 2.4rem;
+        --formulario-02: 2.4rem;        
+        --check-01: 1.2rem;
+        --botao-01: 1.6rem;  
+        --botao-02: 2.4rem;     
+        
+    }
+
+    .container{
+		max-width: 1216px;
+		padding: 0 2rem;
+		box-sizing: content-box;
+		margin: 0 auto;
+	}
+
+    .border{
+        display: block;
+		background-color: var( --ui-05);
+		height: 4.8rem;
+	}
+
+    /* HEADER */
+
+	.header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 3.2rem;
+		margin-bottom: 12rem;
+	}
+
+	.header img{
+		height: 4.2rem;
+	}
+
+	.header__menu{
+		display: flex;
+		align-items: center;
+	}
+
+	.header__menu ul{
+		display: flex;
+		margin-right: 3.2rem;
+	}
+
+	.header__menu li:not(:last-child){
+		margin-right: 3.2rem;
+	}
+
+	.header__menu li a{
+		text-decoration: none;
+		font-size: var(--cabecalho-06);
+		font-weight: 600;
+		color: var(--ui-04);
+	}
+
+	.btn-primario{
+		text-decoration: none;
+		font-size: var(--botao-02);
+		font-weight: 600;
+		color: var(--ui-01);
+		background-color: var(--ui-05);
+		text-align: center;
+		width: 14.8rem;
+		padding: 1.8rem 0;
+		border-radius: 1.2rem;
+        margin-top: 0;
+	}
+
+    /* DEPENDENTE */
+
+    .login__seta{
+        margin-bottom: 12rem;
+    }
+
+    .login__seta h2{
+        font-size: var(--cabecalho-07);
+        font-weight: 500;
+        color: var(--ui-04);
+    }
+
+    .login__seta h3{
+        font-size: var(--cabecalho-07);
+        font-weight: 500;
+        color: var(--ui-03);
+        margin-left: 1.6rem;
+        margin-left: 8rem;
+    }
+
+    .login__seta-btn a{
+        text-decoration: none;
+    }
+
+    .login__certificado svg{
+        width: 2.4rem;
+    }
+
+    .btn-01{
+        display: none;
+    }
+
+    .btn-02{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .btn-02 img{
+        width: 2rem;
+        margin-right: 1rem;
+    }
+
+    .login__seta-btn{
+        display: flex;
+    }
+
+    .login__info{
+        width: 66.4rem;
+    }
+
+    .login__info h2{
+        display: none;
+    }
+
+    form .btn-primario{
+        width: auto;
+        margin-top: 7.2rem;
+    }
+
+    .dados-form{
+        margin-bottom: 3.2rem;
+    }
+
+    .login{
+        margin-bottom: 14rem;
+    }
+
+    /* MENU */
+
+	.menu{
+		display: none;
+	}
+
+    /* FOOTER */
+
+	footer{
+		background-color: var(--ui-05);
+	}
+
+	.footer{
+		display: flex;
+		justify-content: space-between;
+		padding: 2.4rem;
+	}
+
+	.footer p{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+	}
+
+	.footer a{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+		text-decoration: none;
+	}
+
+	.footer svg{
+		width: 1.8rem;
+		fill: var(--ui-01);
+		margin-right: 0.8rem;
+	}
+}

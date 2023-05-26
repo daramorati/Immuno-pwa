@@ -1,0 +1,459 @@
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html{
+	font-size: 62.5%; 
+	/* 1 REM === 10PX (DEZ PX) */
+
+	scroll-behavior: smooth;
+}
+
+:root{
+    /* COLOCAR VARIÁVEIS DE COR */
+
+	--preto-01: #000000;
+	--cinza-01: #D9D9D9;
+	--cinza-02: #9D9D9D;
+	--cinza-03: #585858;
+	--cinza-04: #383838;
+
+	--ui-01: #FFFFFF;
+	--ui-02: #A3B7CC;
+	--ui-03: #5F7E9E;
+	--ui-04: #335880;
+	--ui-05: #18395C;
+
+	--azul-marca: #2E4F86;
+	--azul-claro: #DFE3EF;
+	--off-white: #F5E6D4;
+	--vermelho: #DD7878;
+	--amarelo: #EAAF3F;
+	--verde: #366A32;
+	--verde-claro: #C3D2C2;
+	--verde-claro-02: #688F65;
+
+
+	--cabecalho-01: 2.4rem;
+    --cabecalho-02: 2rem;
+    --cabecalho-03: 1.4rem;
+    --paragrafo-01: 1.4rem;
+    --formulario-01: 1.4rem;
+    --formulario-02: 1.2rem;
+    --check-01: 1.2rem;
+    --botao-01: 1.6rem;
+	
+    
+}
+
+body, *{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+	width: 100%;
+	padding: 0 2.4rem;
+}
+
+/* LOGO */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 3.2rem;
+}
+
+.logo img{
+    width: 11.6rem;
+}
+
+/* LOGIN */
+
+.login-flex{
+margin-bottom: 9rem;
+}
+
+.login__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login__info h2{
+    font-size: var(--cabecalho-01);
+    font-weight: 600;
+    color: var(--ui-05);
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.login__info h3{
+    font-size: var(--cabecalho-02);
+    font-weight: 600;
+    color: var(--ui-04);
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.login__info h4{
+    font-size: var(--cabecalho-03);
+    font-weight: 700;
+    color: var(--ui-04);
+    margin-bottom: 3.4rem;
+    margin-top: 1rem;
+}
+
+.login__info img{
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primario{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: var(--botao-01);
+    font-weight: 600;
+    color: var(--ui-01);
+    background-color: var(--ui-05);
+    padding: 1.5rem 2.6rem;
+    border-radius: 0.8rem;
+    margin: 0 auto; 
+    margin-top: 6rem;     
+}
+
+.btn-primario:last-child{
+    background-color: var(--ui-04);
+    margin-top: 1.2rem;
+}
+
+.login__certificado{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-02);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+.login__certificado svg{
+    width: 1.6rem;
+    fill: var(--ui-03);
+    margin-right: 0.8rem;
+}
+
+/* FORMULÁRIOS */
+
+.dados-form{
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+::placeholder{
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+}
+
+.dados-form-radio{
+    border: 1px solid var(--ui-05);
+    border-radius: 0.8rem;
+    background-color: var(--azul-claro);
+    padding: 1.9rem 2.5rem;
+    width: 100%;
+    font-size: var(--formulario-01);
+    font-weight: 500;
+    color: var(--ui-04);
+    margin-bottom: 2.4rem;
+}
+
+.dados-form-radio h4{
+    margin-bottom: 2rem;
+}
+
+.dados__radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.dados__esc:first-child{
+    margin-bottom: 1.2rem;
+}
+
+#frase-checkbox{
+    font-size: var(--check-01);
+    font-weight: 600;
+    color: var(--ui-04);
+}
+
+#frase-checkbox span{
+    color: var(--ui-05);
+}
+
+/* REGISTRE-SE */
+
+.registre{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.registre p{
+    font-size: var(--paragrafo-01);
+    font-weight: 600;
+    color: var(--ui-03);
+}
+
+.registre a{
+    text-decoration: none;
+    font-size: var(--paragrafo-01);
+    font-weight: 600;
+    color: var(--ui-05);
+}
+
+/* FOOTER */
+
+.footer{
+    display: none;
+}
+
+@media (min-width: 768px){
+
+    :root{
+        /* COLOCAR VARIÁVEIS DE COR */
+    
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+    
+    
+        --cabecalho-01: 4.8rem;
+        --cabecalho-02: 3.2rem;
+        --cabecalho-03: 1.8rem;
+        --paragrafo-01: 1.6rem;
+        --formulario-01: 1.8rem;
+        --formulario-02: 1.8rem;
+        --check-01: 1.6rem;
+        --botao-01: 1.8rem;
+        
+        
+    }
+
+    .container{
+		padding: 0 3rem;
+	}
+
+    /* LOGO */
+
+    .logo{
+        margin-top: 12rem;
+        margin-bottom: 8.8rem;
+    }
+
+    .logo img{
+        width: 18rem;
+    }
+
+    /* LOGIN */
+
+    .login{
+        width: 52.6rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .login__info h2{
+        margin-bottom: 3.2rem;
+    }
+
+    .login__info h3{
+        margin-bottom: 2.4rem;
+    }
+
+    .login__info img{
+        width: 14.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .login__certificado svg{
+        width: 2.4rem;
+    }
+
+    .btn-primario{
+        padding: 1.8rem 2.6rem;
+    }
+
+    .registre p{
+        margin-right: 0.8rem;
+    }
+}
+
+@media (min-width: 1180px){
+
+    :root{
+        /* COLOCAR VARIÁVEIS DE COR */
+    
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+    
+    
+        --cabecalho-01: 4.8rem;
+        --cabecalho-02: 3.2rem;
+        --paragrafo-01: 1.6rem;
+        --paragrafo-03: 1.6rem;
+        --formulario-01: 1.8rem;
+        --formulario-02: 1.8rem;
+        --check-01: 1.6rem;
+        --botao-01: 1.8rem;
+                
+    }
+
+    .container{
+		max-width: 1216px;
+		padding: 0 2rem;
+		box-sizing: content-box;
+		margin: 0 auto;
+	}
+
+    body{
+        background-color: var(--ui-05);
+    }
+
+    .login-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+
+    /* LOGO */
+
+    .logo{
+        background-color: var(--azul-claro);
+        border-radius: 8.8rem 0rem 0rem 8.8rem;
+        padding: 6rem 0;
+        margin: 0;
+        width: 28rem;
+        height: 141.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo img{
+        width: 20.5rem;
+        margin-top: 17.8rem;
+    }
+
+    /* LOGIN */
+
+    .login{
+        width: 97.6rem;
+        height: 141.5rem;
+        background-color: var(--ui-01);
+        border-radius: 0rem 8.8rem 8.8rem 0rem;
+        padding: 6rem 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login__info{
+        width: 52.6rem;
+    }
+
+    .registre{
+        margin-top: 2.4rem;
+    }
+
+    .registre p{
+        margin-right: 0.8rem;
+    }
+
+    /* FOOTER */
+
+	footer{
+		background-color: var(--ui-05);
+        margin-top: 6rem;
+	}
+
+	.footer{
+		display: flex;
+		justify-content: space-between;
+		padding: 2.4rem;
+	}
+
+	.footer p{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+	}
+
+	.footer a{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+		text-decoration: none;
+	}
+
+	.footer svg{
+		width: 1.8rem;
+		fill: var(--ui-01);
+		margin-right: 0.8rem;
+	}
+}

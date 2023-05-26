@@ -1,0 +1,136 @@
+/* MODAL */
+
+:root{
+
+    --ui-01: #FFFFFF;
+	--ui-02: #A3B7CC;
+	--ui-03: #5F7E9E;
+	--ui-04: #335880;
+	--ui-05: #18395C;
+
+    --azul-fundo: #DFE4F0;
+
+    --cabecalho-modal-01: 1.4rem;
+	--paragrafo-modal-01: 1.2rem;
+    --btn-modal-01: 1.4rem;
+}
+
+.modal-container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.ativo{
+    display: flex;
+}
+
+.modal__div{
+  overflow-y: auto;
+  background-color: var(--azul-fundo);
+  border-radius: 0.8rem;
+  width: 32.5rem;
+  height: 60rem;
+  padding: 2.8rem 2.6rem;
+}
+
+.modal__div::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.modal__btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__btn svg{
+    width: 2.4rem;
+    fill: var(--ui-03);
+}
+
+.modal__termos h2{
+    font-size: var(--cabecalho-modal-01);
+    font-weight: 600;
+    color: var(--ui-04);
+    margin-bottom: 2.8rem;
+}
+
+.modal__termos p{
+    font-size: var(--paragrafo-modal-01);
+    font-weight: 500;
+    color: var(--ui-03);
+    line-height: 175%;
+}
+
+@media (min-width: 768px){
+
+    :root{
+
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-fundo: #DFE4F0;
+    
+        --cabecalho-modal-01: 1.8rem;
+        --paragrafo-modal-01: 1.4rem;
+        --btn-modal-01: 1.4rem;
+    }
+
+
+    .modal__div{
+      width: 60rem;
+      height: auto;
+      padding: 4rem;
+    }
+
+    .modal__btn svg{
+        width: 2.8rem;
+    }
+
+    .modal__termos h2{
+        margin-bottom: 2.6rem;
+    }
+}
+
+@media (min-width: 1180px){
+
+    :root{
+
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-fundo: #DFE4F0;
+    
+        --cabecalho-modal-01: 2.8rem;
+        --paragrafo-modal-01: 1.6rem;
+        --btn-modal-01: 1.4rem;
+    }
+
+    .modal__div{     
+        border-radius: 1.2rem;
+        width: 98rem;
+        height: auto;
+        padding: 4rem 5rem;
+      }
+
+      .modal__btn svg{
+        width: 4.8rem;
+    }
+
+      .modal__termos h2{
+        margin-bottom: 3.6rem;
+    }
+}

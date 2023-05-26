@@ -1,0 +1,121 @@
+/* MODAL */
+
+:root{
+
+    --ui-01: #FFFFFF;
+	--ui-02: #A3B7CC;
+	--ui-03: #5F7E9E;
+	--ui-04: #335880;
+	--ui-05: #18395C;
+
+    --azul-marca: #2E4F86;
+    --azul-fundo: #DFE4F0;
+
+    --cabecalho-modal-01: 2rem;
+	--cabecalho-modal-02: 1.4rem;
+    --btn-modal-01: 1.4rem;
+}
+
+.modal-container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.ativo{
+    display: flex;
+}
+
+.modal__div{
+    background-color: var(--azul-fundo);
+    width: 30rem;
+    height: auto;
+    padding: 2.6rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__info{
+    width: 17.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__info svg{
+    width: 6rem;
+    fill: var(--ui-04);
+    margin-bottom: 1.8rem;
+}
+
+.modal__info h2{
+    font-size: var(--cabecalho-modal-01);
+    font-weight: 500;
+    color: var(--ui-04);
+    line-height: 120%;
+    text-align: center;
+}
+
+.modal__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+.btn-modal{
+    text-decoration: none;
+    font-size: var(--btn-modal-01);
+    font-weight: 500;
+    color: var(--ui-01);
+    line-height: 130%;
+    text-align: center;
+    padding: 1rem 3.2rem;
+    border: 0.1rem solid var(--ui-04);
+    border-radius: 0.8rem;
+    background-color: var(--ui-05);
+    width: 17rem;    
+}
+
+@media (min-width: 1180px){
+
+    :root{
+
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-fundo: #DFE4F0;
+    
+        --cabecalho-modal-01: 2.8rem;
+        --cabecalho-modal-02: 1.4rem;
+        --btn-modal-01: 2rem;
+    }
+
+    .modal__div{
+        width: 60rem;
+        height: auto;
+        padding: 7.6rem; 
+    }
+
+    .modal__info{
+        width: 26.4rem;
+    }
+
+    .btn-modal{
+        width: 27.6rem;
+        padding: 1.2rem  5.6rem;
+    }
+}

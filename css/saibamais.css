@@ -1,0 +1,446 @@
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html{
+	font-size: 62.5%; 
+	/* 1 REM === 10PX (DEZ PX) */
+
+	scroll-behavior: smooth;
+
+}
+
+:root{
+
+	--preto-01: #000000;
+	--cinza-01: #D9D9D9;
+	--cinza-02: #9D9D9D;
+	--cinza-03: #585858;
+	--cinza-04: #383838;
+
+	--ui-01: #FFFFFF;
+	--ui-02: #A3B7CC;
+	--ui-03: #5F7E9E;
+	--ui-04: #335880;
+	--ui-05: #18395C;
+
+	--azul-marca: #2E4F86;
+	--azul-claro: #DFE3EF;
+	--off-white: #F5E6D4;
+	--vermelho: #DD7878;
+    --vermelho-02: #f7d1d1;
+	--amarelo: #EAAF3F;
+	--verde: #366A32;
+	--verde-claro: #C3D2C2;
+	--verde-claro-02: #688F65;
+    --verde-claro-03: #C3D3C2;
+
+    --cabecalho-01: 2.8rem;
+    --cabecalho-02: 2.4rem;
+    --cabecalho-03: 2rem;
+    --cabecalho-04: 1.6rem;
+    --cabecalho-05: 1.2rem;
+    --paragrafo-01: 1.4rem;
+	    
+}
+
+body, *{
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+	width: 100%;
+	padding: 0 2.4rem;
+}
+
+.border{
+    display: none;
+}
+
+/* HEADER */
+
+.header{
+	display: none;
+}
+
+/* VACINA */
+
+.vacina{
+    margin-top: 5.6rem;
+    margin-bottom: 12rem;
+}
+
+.btn-01{
+    width: 4.2rem;
+}
+
+.btn-02{
+    display: none;
+}
+
+.vacina__seta{
+    margin-bottom: 2rem;
+}
+
+.vacina__seta-btn{
+    display: none;
+}
+
+.vacina__seta img{
+    width: 4.2rem;
+}
+
+.vacina__saibamais h3{
+    font-size: var(--cabecalho-02);
+    font-weight: 500;
+    color: var(--ui-03);
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.vacina__saibamais h2{
+    font-size: var(--cabecalho-01);
+    font-weight: 600;
+    color: var(--ui-05);
+}
+
+.vacina__saibamais span{
+    display: none;
+}
+
+.vacina__info{
+    margin-top: 4rem;
+}
+
+.vacina__duvidas{
+    width: 33rem;
+    margin-bottom: 2.8rem;
+}
+
+.vacina__duvidas h4{
+    font-size: var(--cabecalho-03);
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--ui-05);
+    margin-bottom: 1.4rem;
+}
+
+.vacina__duvidas div{
+    height: 0.1rem;
+    border-bottom: 0.1rem solid var(--ui-02);
+    margin-bottom: 1.4rem;
+}
+
+.vacina__duvidas p{
+    font-size: var(--paragrafo-01);
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--ui-04);
+}
+
+.vacina__duvidas li{
+    font-size: var(--paragrafo-01);
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--ui-04);
+}
+
+/* MENU */
+
+.menu{
+	background-color: var(--azul-claro);
+	padding: 2.6rem 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.menu__itens{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.menu__itens svg{
+	width: 2.4rem;
+	fill: var(--ui-04);
+}
+
+/* FOOTER */
+
+.footer{
+	display: none;
+}
+
+@media (min-width: 768px){
+
+    :root{
+
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --vermelho-02: #f7d1d1;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+        --verde-claro-03: #C3D3C2;
+    
+        --cabecalho-01: 4rem;
+        --cabecalho-02: 3.2rem;
+        --cabecalho-03: 2.4rem;
+        --cabecalho-04: 1.6rem;
+        --cabecalho-05: 1.2rem;
+        --paragrafo-01: 1.8rem;
+            
+    }
+
+    .container{
+		padding: 0 3rem;
+	}
+
+    /* VACINA */
+
+    .vacina{
+        margin-bottom: 16rem;
+    }
+
+    .btn-01 img{
+        width: 5rem;
+    }
+
+    .vacina__saibamais h3{
+        margin-top: 3.8rem;
+        margin-bottom: 3.8rem;
+    }
+
+   .vacina__info{
+    margin-top: 7.2rem;
+   }
+
+   .vacina__duvidas{
+    width: 58.6rem;
+    margin-bottom: 3.6rem;
+   }
+
+    /* MENU */
+
+	.menu__itens svg{
+		width: 3.6rem;
+	}
+}
+
+@media (min-width: 1180px){
+
+    :root{
+
+        --preto-01: #000000;
+        --cinza-01: #D9D9D9;
+        --cinza-02: #9D9D9D;
+        --cinza-03: #585858;
+        --cinza-04: #383838;
+    
+        --ui-01: #FFFFFF;
+        --ui-02: #A3B7CC;
+        --ui-03: #5F7E9E;
+        --ui-04: #335880;
+        --ui-05: #18395C;
+    
+        --azul-marca: #2E4F86;
+        --azul-claro: #DFE3EF;
+        --off-white: #F5E6D4;
+        --vermelho: #DD7878;
+        --vermelho-02: #f7d1d1;
+        --amarelo: #EAAF3F;
+        --verde: #366A32;
+        --verde-claro: #C3D2C2;
+        --verde-claro-02: #688F65;
+        --verde-claro-03: #C3D3C2;
+    
+        --cabecalho-01: 5.6rem;
+        --cabecalho-02: 3.6rem;
+        --cabecalho-03: 2.8rem;
+        --cabecalho-04: 1.6rem;
+        --cabecalho-05: 1.2rem;
+        --cabecalho-06: 2rem;
+        --cabecalho-07: 3.2rem;
+        --paragrafo-01: 2rem;
+        --paragrafo-03: 1.6rem;
+        --botao-02: 2.4rem;
+            
+    }
+
+    .container{
+		max-width: 1216px;
+		padding: 0 2rem;
+		box-sizing: content-box;
+		margin: 0 auto;
+	}
+
+    .border{
+        display: block;
+		background-color: var( --ui-05);
+		height: 4.8rem;
+	}
+
+    /* HEADER */
+
+	.header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 3.2rem;
+		margin-bottom: 12rem;
+	}
+
+	.header img{
+		height: 4.2rem;
+	}
+
+	.header__menu{
+		display: flex;
+		align-items: center;
+	}
+
+	.header__menu ul{
+		display: flex;
+		margin-right: 3.2rem;
+	}
+
+	.header__menu li:not(:last-child){
+		margin-right: 3.2rem;
+	}
+
+	.header__menu li a{
+		text-decoration: none;
+		font-size: var(--cabecalho-06);
+		font-weight: 600;
+		color: var(--ui-04);
+	}
+
+	.btn-primario{
+		text-decoration: none;
+		font-size: var(--botao-02);
+		font-weight: 600;
+		color: var(--ui-01);
+		background-color: var(--ui-05);
+		text-align: center;
+		width: 14.8rem;
+		padding: 1.8rem 0;
+		border-radius: 1.2rem;
+	}
+
+    /* DEPENDENTE */
+
+    .vacina__seta{
+        margin-bottom: 12rem;
+    }
+
+    .vacina__seta h2{
+        font-size: var(--cabecalho-07);
+        font-weight: 500;
+        color: var(--ui-04);
+    }
+
+    .vacina__seta h3{
+        font-size: var(--cabecalho-07);
+        font-weight: 500;
+        color: var(--ui-03);
+        margin-left: 1.6rem;
+    }
+
+    .vacina__seta-btn a{
+        text-decoration: none;
+    }
+
+    .btn-01{
+        display: none;
+    }
+
+    .btn-02{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .btn-02 img{
+        width: 2rem;
+        margin-right: 1rem;
+    }
+
+    .vacina__seta-btn{
+        display: flex;
+    }
+
+    /* VACINA */
+
+    .vacina{
+        margin-bottom: 16rem;
+    }
+
+    .vacina__duvidas{
+        width: 75rem;
+        margin-bottom: 6rem;
+    }
+
+    .vacina__duvidas h4{
+        margin-bottom: 2.4rem;
+    }
+
+    .vacina__duvidas div{
+        margin-bottom: 2.4rem;
+    }
+
+    .vacina__saibamais span{
+        display:inline;
+    }
+
+    /* MENU */
+
+	.menu{
+		display: none;
+	}
+
+    /* FOOTER */
+
+	footer{
+		background-color: var(--ui-05);
+	}
+
+	.footer{
+		display: flex;
+		justify-content: space-between;
+		padding: 2.4rem;
+	}
+
+	.footer p{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+	}
+
+	.footer a{
+		font-size: var(--paragrafo-03);
+		line-height: 130%;
+		color: var(--ui-01);
+		text-decoration: none;
+	}
+
+	.footer svg{
+		width: 1.8rem;
+		fill: var(--ui-01);
+		margin-right: 0.8rem;
+	}
+}
