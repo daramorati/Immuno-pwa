@@ -135,6 +135,10 @@ body, *{
 	text-decoration: none;
 }
 
+.dependentes__pessoa{
+	position: relative;
+}
+
 .dependentes__pessoa img{
 	width: 6.8rem;
 	border-radius: 0.8rem;
@@ -143,7 +147,7 @@ body, *{
 }
 
 .dependentes__pessoa p{
-	display: none;
+	display: block;
 	font-size: var(--exclamacao);
 	font-weight: 900;
 	color: var(--vermelho);
@@ -156,6 +160,8 @@ body, *{
 .pendente p{
 	display: block;
 	position: absolute;
+	top: -1rem;
+	right: 0.4rem;
 }
 
 .dependentes__pessoa h3{
@@ -359,7 +365,7 @@ body, *{
 		--paragrafo-02: 1.6rem;
 		--botao-01: 1.8rem;
 		--botao-02: 2.4rem;
-		--exclamacao: 3.6rem;
+		--exclamacao: 4rem;
 		
 	}
 
@@ -518,7 +524,7 @@ body, *{
 		--paragrafo-03: 1.6rem;
 		--botao-01: 2.4rem;
 		--botao-02: 2.4rem;
-		--exclamacao: 3.6rem;
+		--exclamacao: 6.2rem;
 		
 	}
 
@@ -611,8 +617,17 @@ body, *{
 		margin-bottom: 9.2rem;
 	}
 
+	.pendente p{
+		top: 5rem;
+		right: -6rem;
+	}
+
 	.dependentes__pessoa{
 		margin-right: 14rem;
+	}
+
+	.dependentes__pessoa p{
+		color: var(--ui-01);
 	}
 
 	.dependentes__pessoa img{
