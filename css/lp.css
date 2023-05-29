@@ -690,7 +690,7 @@ footer{
 	}
 
 	.info__dados2{
-		margin-bottom: 16rem;
+		margin-bottom: 16rem;		
 	}
 
 	.info__dados2 h2{
@@ -698,7 +698,7 @@ footer{
 		margin-bottom: 3.6rem;
 	}
 
-	.info__dados2 p{
+	.info__flex{
 		width: 78.3rem;
 	}
 
