@@ -1,7 +1,7 @@
 function initModal() {
-    const modalContainer = document.querySelector('.modal-container');
-    const botaoFechar = document.querySelector('[data-modal="fechar"]');
-    const containerModal = document.querySelector('[data-modal="container"]');
+    const modalContainer = document.querySelector('.modal-container1');
+    const botaoFechar = document.querySelector('[data-modal="fechar1"]');
+    const containerModal = document.querySelector('[data-modal="container1"]');
 
 
     if (modalContainer && botaoFechar && containerModal){
@@ -27,6 +27,8 @@ function initModal() {
         containerModal.addEventListener('click', cliqueForaModal);
         
     }
+
+    console.log(botaoFechar)
 }
 
 initModal()
