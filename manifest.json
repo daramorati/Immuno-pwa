@@ -15,7 +15,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "pagina-principal.html",
   "background_color": "#E9EAEB",
   "display": "standalone",
   "theme_color": "#084068"

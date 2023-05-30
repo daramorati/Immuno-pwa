@@ -10,9 +10,9 @@
 
     --azul-fundo: #DFE4F0;
 
-    --cabecalho-modal-01: 1.6rem;
-	--cabecalho-modal-02: 1.4rem;
-    --btn-modal-01: 1.4rem;
+    --cabecalho-modal-001: 1.6rem;
+	--cabecalho-modal-002: 1.4rem;
+    --btn-modal-001: 1.4rem;
 }
 
 .modal-container1{
@@ -58,7 +58,7 @@
 }
 
 .modal__info1 h2{
-    font-size: var(--cabecalho-modal-01);
+    font-size: var(--cabecalho-modal-001);
     font-weight: 500;
     color: var(--ui-04);
     line-height: 120%;
@@ -67,7 +67,7 @@
 }
 
 .modal__info1 h3{
-    font-size: var(--cabecalho-modal-02);
+    font-size: var(--cabecalho-modal-002);
     font-weight: 500;
     color: var(--ui-03);  
     line-height: 120%;
@@ -82,7 +82,7 @@
 
 .btn-modal{
     text-decoration: none;
-    font-size: var(--btn-modal-01);
+    font-size: var(--btn-modal-001);
     font-weight: 500;
     color: var(--ui-04);
     text-align: center;
@@ -112,9 +112,9 @@
     
         --azul-fundo: #DFE4F0;
     
-        --cabecalho-modal-01: 2.4rem;
-        --cabecalho-modal-02: 2rem;
-        --btn-modal-01: 2rem;
+        --cabecalho-modal-001: 2.4rem;
+        --cabecalho-modal-002: 2rem;
+        --btn-modal-001: 2rem;
     }
 
 
@@ -160,9 +160,9 @@
     
         --azul-fundo: #DFE4F0;
     
-        --cabecalho-modal-01: 3.2rem;
-        --cabecalho-modal-02: 2.8rem;
-        --btn-modal-01: 2.8rem;
+        --cabecalho-modal-001: 3.2rem;
+        --cabecalho-modal-002: 2.8rem;
+        --btn-modal-001: 2.8rem;
     }
 
 
